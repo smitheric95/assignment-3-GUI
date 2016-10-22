@@ -16,8 +16,9 @@ var Movie = (function () {
 }());
 exports.Movie = Movie;
 exports.MOVIES = [
-    { title: "Movie1", year: 2015, imagePath: "movie1.jpg", rating: 0 },
-    { title: "Movie2", year: 2016, imagePath: "movie2.jpg", rating: 0 }
+    { title: "Batman", year: 1988, imagePath: "../../images/shining.jpg", rating: 0 },
+    { title: "Home Alone", year: 1990, imagePath: "../../images/nemo.jpg", rating: 0 },
+    { title: "Titanic", year: 1996, imagePath: "../../images/hungergames.jpg", rating: 0 }
 ];
 var MovieService = (function () {
     function MovieService() {

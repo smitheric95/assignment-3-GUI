@@ -1,0 +1,40 @@
+li{
+	list-style-type: none;
+}
+
+ul.movies > li{
+	clear: both;
+	margin-bottom: 90px;
+}
+
+ul.rating li{
+	float: left;
+}
+
+img{
+	float: left;
+	width: 90px;
+	margin-right: 10px;
+}
+
+h2{
+	color: green;
+	font: Verdana;
+	font-size: 30px;
+	font-weight: normal;
+	margin-left: 40px;
+}
+
+a{
+	color: black;
+	font-size: 14px;
+	padding-right: 5px;
+}
+
+a:hover{
+	text-decoration: none;
+}
+
+span{
+	font-size: 10px;
+}

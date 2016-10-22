@@ -1,7 +1,9 @@
+<h2>Movie Database</h2>
 <ul class="movies">
   <li *ngFor="let movie of movies">
-    <span class="badge">{{movie.title}}</span>
-    <ul>
+  	<img src="{{movie.imagePath}}"/>
+    <p>{{movie.title}} ({{movie.year}})</p>
+    <ul class="rating">
       <li *ngFor="let num of [0,1,2,3,4]">
       	<a 
       		(click)="changeRating(movie.title, num+1)"
