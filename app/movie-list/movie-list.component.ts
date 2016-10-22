@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-
 import { MovieService } from './movie-list.service';
 
 @Component({
@@ -16,8 +15,9 @@ export class MovieListComponent{
 		this.movies = movieService.getMovies();
 	}
 
-	changeRating(){
-		alert('hi');
+	changeRating(t : string, num : number){
+		
+		this.movies[ this.movies.map(x => x.title).indexOf(t) ].rating = num;
 	}
 }
 
