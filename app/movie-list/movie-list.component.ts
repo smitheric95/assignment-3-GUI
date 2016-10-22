@@ -12,12 +12,12 @@ import { MovieService } from './movie-list.service';
 export class MovieListComponent{
 	movies: any[];
 
-	constructor(private movieService : MovieService ){
+	constructor( private movieService : MovieService ){
 		this.movies = movieService.getMovies();
 	}
 
-	changeRating(movie : number, rating : number){
-
+	changeRating(){
+		alert('hi');
 	}
 }
 

@@ -15,7 +15,8 @@ var MovieListComponent = (function () {
         this.movieService = movieService;
         this.movies = movieService.getMovies();
     }
-    MovieListComponent.prototype.changeRating = function (movie, rating) {
+    MovieListComponent.prototype.changeRating = function () {
+        alert('hi');
     };
     MovieListComponent = __decorate([
         core_1.Component({

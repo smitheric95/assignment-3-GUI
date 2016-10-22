@@ -1,5 +1,6 @@
 <ul class="movies">
   <li *ngFor="let movie of movies">
     <span class="badge">{{movie.title}}</span>
+    <a (click)="changeRating()" class="glyphicon glyphicon-star-empty"></a>
   </li>
  </ul>

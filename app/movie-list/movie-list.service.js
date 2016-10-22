@@ -16,8 +16,8 @@ var Movie = (function () {
 }());
 exports.Movie = Movie;
 exports.MOVIES = [
-    { title: "Movie1", year: 2015, imagePath: "movie1.jpg" },
-    { title: "Movie2", year: 2016, imagePath: "movie2.jpg" }
+    { title: "Movie1", year: 2015, imagePath: "movie1.jpg", rating: 0 },
+    { title: "Movie2", year: 2016, imagePath: "movie2.jpg", rating: 0 }
 ];
 var MovieService = (function () {
     function MovieService() {
