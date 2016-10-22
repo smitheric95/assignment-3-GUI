@@ -9,12 +9,19 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
+var Movie = (function () {
+    function Movie() {
+    }
+    return Movie;
+}());
+exports.Movie = Movie;
+exports.MOVIES = [
+    { title: "Movie1", year: 2015, imagePath: "movie1.jpg" },
+    { title: "Movie2", year: 2016, imagePath: "movie2.jpg" }
+];
 var MovieService = (function () {
     function MovieService() {
-        this.movies = [
-            { title: "Movie1", year: 2015, imagePath: "movie1.jpg" },
-            { title: "Movie2", year: 2016, imagePath: "movie2.jpg" }
-        ];
+        this.movies = exports.MOVIES;
     }
     MovieService.prototype.getMovies = function () {
         return this.movies;

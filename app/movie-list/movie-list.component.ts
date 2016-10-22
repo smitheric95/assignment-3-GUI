@@ -15,6 +15,10 @@ export class MovieListComponent{
 	constructor(private movieService : MovieService ){
 		this.movies = movieService.getMovies();
 	}
+
+	changeRating(movie : number, rating : number){
+
+	}
 }
 
 
