@@ -15,9 +15,8 @@ export class MovieListComponent{
 		this.movies = movieService.getMovies();
 	}
 
-	changeRating(t : string, num : number){
-		
-		this.movies[ this.movies.map(x => x.title).indexOf(t) ].rating = num;
+	changeRating(title : string, num : number){
+		this.movies[ this.movies.map(x => x.title).indexOf(title) ].rating = num;
 	}
 }
 
