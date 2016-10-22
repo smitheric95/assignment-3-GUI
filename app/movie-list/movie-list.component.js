@@ -9,28 +9,22 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var platform_browser_1 = require('@angular/platform-browser');
-var forms_1 = require('@angular/forms');
-var app_component_1 = require('./app.component');
-var movie_list_component_1 = require('./movie-list/movie-list.component');
-var AppModule = (function () {
-    function AppModule() {
+var movie_list_service_1 = require('./movie-list.service');
+var MovieListComponent = (function () {
+    function MovieListComponent(movieService) {
+        this.movieService = movieService;
+        this.movies = movieService.getMovies();
     }
-    AppModule = __decorate([
-        core_1.NgModule({
-            imports: [
-                platform_browser_1.BrowserModule,
-                forms_1.FormsModule
-            ],
-            declarations: [
-                app_component_1.AppComponent,
-                movie_list_component_1.MovieListComponent
-            ],
-            bootstrap: [app_component_1.AppComponent]
+    MovieListComponent = __decorate([
+        core_1.Component({
+            selector: 'movie-list',
+            templateUrl: './app/movie-list/movie-list.html',
+            styleUrls: ['./app/movie-list/movie-list.css'],
+            providers: [movie_list_service_1.MovieService]
         }), 
-        __metadata('design:paramtypes', [])
-    ], AppModule);
-    return AppModule;
+        __metadata('design:paramtypes', [movie_list_service_1.MovieService])
+    ], MovieListComponent);
+    return MovieListComponent;
 }());
-exports.AppModule = AppModule;
-//# sourceMappingURL=app.module.js.map
+exports.MovieListComponent = MovieListComponent;
+//# sourceMappingURL=movie-list.component.js.map

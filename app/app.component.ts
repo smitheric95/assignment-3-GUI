@@ -1,7 +1,16 @@
 import { Component } from '@angular/core';
+
 @Component({
-  selector: 'my-app',
-  template: '<h1>My Second Angular App</h1>'
+  selector: 'app',
+  templateUrl: './app/app.html',
+  styleUrls: [ './app/app.css' ]
 })
-export class AppComponent { }
+
+export class AppComponent { 
+	title : string;
+
+	constructor(){
+		this.title = "Movie List";
+	}
+}
 
